@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import IconTextButton from "./IconTextButton.jsx";
-import { FaHome, FaGamepad } from "react-icons/fa";
+import { FaHome, FaGamepad, FaUserFriends } from "react-icons/fa";
 import { RiTeamFill } from "react-icons/ri";
 import { GrContact } from "react-icons/gr";
 import { MdWork } from "react-icons/md";
@@ -18,7 +18,7 @@ const LeftSideBar = () => {
 
     return (
         <>
-            <div className="bg-slate-800 fixed left-0 top-0 h-full w-auto flex flex-col justify-top items-left">
+            <div className="bg-slate-800 h-full flex-col justify-top items-left">
 
                 <div className="flex h-auto p-6">
                     <img src="src/assets/wstudiologo.png"></img>
@@ -46,17 +46,24 @@ const LeftSideBar = () => {
                     ></IconTextButton>
 
                 <IconTextButton
-                    text="Contact"
-                    icon={GrContact}
-                    isSelected={selectedButton === "Contact"}
-                    onClick={() => handleButtonClick("Contact")}
-                    ></IconTextButton>
+                    text="Partner"
+                    icon={FaUserFriends}
+                    isSelected={selectedButton === "Partner"}
+                    onClick={() => handleButtonClick("Partner")}
+                ></IconTextButton>
 
                 <IconTextButton
                     text="Jobs"
                     icon={MdWork}
                     isSelected={selectedButton === "Jobs"}
                     onClick={() => handleButtonClick("Jobs")}
+                    ></IconTextButton>
+
+                <IconTextButton
+                    text="Contact"
+                    icon={GrContact}
+                    isSelected={selectedButton === "Contact"}
+                    onClick={() => handleButtonClick("Contact")}
                     ></IconTextButton>
 
                 <IconTextButton
