@@ -1,14 +1,16 @@
 import './App.css'
+import LeftSideBar from './components/LeftSideBar.jsx'
+import BodyPanel from './components/BodyPanel.jsx'
 
 function App() {
 
   return (
     <>
-      <div className="bg-black flex w-full h-full">
-        <p className="text-3xl text-white">Hello World</p>
-      </div>
-      <div className="bg-slate-400 flex w-full h-full">
-        
+      <div className="bg-slate-700 fixed w-full h-full">
+      
+      <LeftSideBar />
+      <BodyPanel />
+
       </div>
     </>
   )
