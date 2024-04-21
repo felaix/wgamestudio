@@ -1,17 +1,24 @@
-import LeftSideBar from './components/LeftSideBar.jsx'
-import Home from './components/Home.jsx'
-import Games from './components/Games.jsx'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navigation from './components/Navigation.jsx'
+import AboutPage from './components/AboutPage.jsx'
+import MainPage from './components/MainPage.jsx'
+import ProjectsPage from "./components/ProjectsPage.jsx";
 
 function App() {
   return (
-    <div className="h-screen flex bg-black">
-      <LeftSideBar />
-      <div className="flex-1 bg-slate-900 flex justify-center items-center">
-        <Home></Home>
-        <Games></Games>
+    
+    <Router>
+      <div className="h-full w-full flex items-center justify-center flex-col bg-gray-900 overflow-y-hidden">
+        <Navigation></Navigation>
+        <Routes>
+          <Route path="/" element={<AboutPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/main" element={<MainPage />} />
+        </Routes>
       </div>
-    </div>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;

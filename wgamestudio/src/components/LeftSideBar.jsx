@@ -11,6 +11,12 @@ import { GoLaw } from "react-icons/go";
 const LeftSideBar = () => {
 
     const [selectedButton, setSelectedButton] = useState("Home");
+    const [wrapped, setWrap] = useState(false);
+
+    const CheckScreenWidth = () => {
+        if (screen.width <= 900) setWrap(true); 
+        else setWrap(false);
+    };
 
     const handleButtonClick = (buttonText) => {
         setSelectedButton(buttonText);
@@ -18,13 +24,30 @@ const LeftSideBar = () => {
 
     return (
         <>
+
+            <script>CheckScreenWidth();</script>
+
             <div className="bg-slate-800 h-full flex-col justify-top items-left">
 
-                <div className="flex h-auto p-6">
+                {/* logo */}
+                {/* <div className="flex h-auto p-6">
                     <img src="src/assets/wstudiologo.png"></img>
-                </div>
+                </div> */}
 
+                {/* Responsive Wrap Button */}
                 <IconTextButton
+                    text="Wrap"
+                    icon={FaUserFriends}
+                    isSelected={selectedButton === "Wrap"}
+                    onClick={() => setWrap(!wrapped)}
+                ></IconTextButton>
+
+                {/* Buttons */}
+                { wrapped && (
+
+                    <div>
+                    
+                    <IconTextButton
                     text="Home"
                     icon={FaHome}
                     isSelected={selectedButton === "Home"}
@@ -72,6 +95,8 @@ const LeftSideBar = () => {
                     isSelected={selectedButton === "Legal"}
                     onClick={() => handleButtonClick("Legal")}
                     ></IconTextButton>
+                    </div>)
+                    }
             </div>
         </>
     )
