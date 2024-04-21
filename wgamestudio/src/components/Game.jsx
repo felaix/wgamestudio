@@ -1,7 +1,7 @@
 import React from "react";
-import Tags from "./Tags.jsx";  
+import Tags from "./utils/Tags.jsx";  
 import { FaItchIo } from "react-icons/fa";
-import OpenURLButton from "./OpenURLButton.jsx";
+import OpenURLButton from "./utils/OpenURLButton.jsx";
 
 const Game = ({ coverSrc, title, description, itchUrl, tags }) => {
   return (
