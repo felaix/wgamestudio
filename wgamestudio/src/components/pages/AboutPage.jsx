@@ -31,24 +31,29 @@ const AboutPage = () => {
                     <p className="">This is FGames, a solo game developer</p>
                     <p className="pb-4">feel free to check out my projects!</p>
 
+                    <DropDownButton 
+                        title="About me"
+                        contentText="my hobby is to code different small projects for fun and playing call of duty (zombies) with my roommate.
+                        I also like to read books and staring in seas
+                        ">
+                    </DropDownButton>
 
-                    <DropDownButton title="test"
-                        contentText="As a teenager, i loved creating games in RPG Maker
-                        but then i met my first girlfriend and puberty">
-                        </DropDownButton>
-                    {/* <p className="text-xl text-white">About</p>
-                        <p className="">My Story:</p>
-                        <p className="">As a teenager, i loved creating games in RPG Maker</p>
-                        <p className="">but then i met my first girlfriend and puberty</p>
-                        <p className="">In may, 2020 i broke up with her</p>
-                        <p className="">so i started game development instead</p>
-                        <p className="">I joined a game design school</p>
-                        <p className="">In 3 years I learned a lot about different tools, engines and professional game design</p>
-                        <p className="">(i love programming the most tho)</p>
-                        <p className="">There is always more to learn</p>
-                        <p className="">And thats what i love about game development</p>
-                        <p className="">Check them out  <Link hrefLang="/projects" className="hover:text-blue-500 text-slate-100">here</Link> </p> */}
+                    <DropDownButton 
+                        title="My Story"
+                        contentText="As a teenager, i loved creating games in RPG Maker,
+                        but then i met my first girlfriend and puberty kicked in.
+                        In may, 2020 we broke up, so i started game development instead :D
+                        I joined a game design school and
+                        in 3 years i learned a lot about different tools, engines and professional concept/game design
+                        (i <3 programming the most tho)
+                        ">
+                    </DropDownButton>
 
+                    <DropDownButton 
+                        title="Social Media"
+                        contentText="At the moment i don't use social media, but you can join my discord!
+                        ">
+                    </DropDownButton>
 
                 </div>
             </div>

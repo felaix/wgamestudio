@@ -8,7 +8,7 @@ function App() {
   return (
     
     <Router>
-      <div className="h-screen w-screen flex items-center justify-center flex-col bg-gray-900 overflow-y-hidden">
+      <div className="h-screen w-screen flex items-center justify-center flex-col bg-gray-900 overflow-x-hidden">
         <Navigation></Navigation>
         <Routes>
           <Route path="/" element={<AboutPage />} />
