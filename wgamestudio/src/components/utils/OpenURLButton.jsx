@@ -8,7 +8,7 @@ const OpenURLButton = ({ text, url, icon = null }) => {
   return (
     <div
       onClick={openURL}
-      className="w-fit h-auto flex-row flex items-center bg-slate-600 text-white p-2 rounded text-center gap-2 my-2 hover:bg-slate-500 hover:cursor-pointer"
+      className="w-fit h-auto flex-row flex items-center bg-blue-500 text-white p-2 rounded text-center gap-2 m-2 hover:bg-blue-400 hover:cursor-pointer"
     >
       <p>{icon}</p>
       <p>{text}</p>

@@ -8,8 +8,8 @@ function App() {
   return (
     
     <Router>
-      <div className="h-screen w-screen flex items-center justify-center flex-col bg-gray-900 overflow-x-hidden">
-        <Navigation></Navigation>
+      <div className=" h-screen w-screen flex items-center justify-center flex-col bg-gray-900 overflow-x-hidden">
+        {/* <Navigation></Navigation> */}
         <Routes>
           <Route path="/" element={<AboutPage />} />
           <Route path="/about" element={<AboutPage />} />

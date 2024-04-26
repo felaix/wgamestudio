@@ -4,15 +4,17 @@ import OpenURLButton from "../utils/OpenURLButton.jsx";
 import DropDownButton from "../utils/DropDownButton.jsx"
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { IoIosMail } from "react-icons/io";
+import { FaDiscord, FaInstagram, FaItchIo  } from "react-icons/fa";
+
 
 const AboutPage = () => {
     return (
         <>
-            <div className="h-full w-full flex items-center justify-center bg-gray-900">
 
-                <div className="h-full flex flex-col bg-gray-900 md:w-2/3 w-full items-center p-2 text-gray-400">
+                <div className="h-auto w-auto shadow-lg border-blue-500 flex flex-col bg-gray-800 items-center justify-center p-10 pb-5 text-gray-400 border-2 border-solid rounded-md">
 
-                    <div className="w-64 h-64 rounded-full z-0 border-slate-200 border-solid border-x-4 border-y-4">
+                    <div className="w-36 h-36 rounded-full z-0 border-blue-500 border-2">
                         <img className="rounded-full" src="src/assets/FGames_ProfilePicture_Blue.jpg"></img>
                     </div>
 
@@ -23,10 +25,34 @@ const AboutPage = () => {
                         <Tags text="ReactJS"></Tags>
                     </div>
 
-                    {/* Username */}
-                    <h1 className="text-4xl p-2 text-gray-50">FGames</h1>
+                    
+                                        {/* Social Media */}
+                                        <div className="flex flex-row">
+                        <OpenURLButton text={"Mail"} url={"felaixessbach@gmail.com"} icon={<IoIosMail />} ></OpenURLButton>
+                        <OpenURLButton text={"Discord"} url={"https://discord.gg/EgxUuhcc"} icon={<FaDiscord />} ></OpenURLButton>
+                        <OpenURLButton text={"Instagram"} url={"https://www.instagram.com/fgamesdev/"} icon={<FaInstagram />} ></OpenURLButton>
+                        <OpenURLButton text={"Itch"} url={"https://felaix.itch.io"} icon={<FaItchIo />} ></OpenURLButton>
+                    </div>
 
-                    {/* Description */}
+                    {/* Username */}
+                    <h1 className="text-1xl font-bold p-2 text-gray-50">FGames</h1>
+                    <p>Unity C# Programmer</p>
+
+                    {/* About & Interests */}
+                    <div className="text-center justify-center flex flex-col items-center w-auto">
+                        <h1 className="text-1xl font-bold p-4 text-gray-50">About</h1>
+                        <p className="text-center">Hi! I'm Felix. I love the work and i do (and cats)</p>
+                        <p className="text-center p-2">Feel free to check out my projects!</p>
+                    </div>
+
+                    <div className="text-center justify-center flex flex-row items-center w-auto pt-2 text-gray-500">
+                        <p className="text-center px-2 hover:text-white hover:cursor-pointer hover:underline">Partner</p>
+                        <p className="text-center px-2 hover:text-white hover:cursor-pointer hover:underline">Legal</p>
+                        <p className="text-center px-2 hover:text-white hover:cursor-pointer hover:underline">Contact</p>
+                    </div>
+
+
+                    {/* Description
                     <p className="">Hello World!</p>
                     <p className="">This is FGames, a solo game developer</p>
                     <p className="pb-4">feel free to check out my projects!</p>
@@ -53,10 +79,9 @@ const AboutPage = () => {
                         title="Social Media"
                         contentText="At the moment i don't use social media, but you can join my discord!
                         ">
-                    </DropDownButton>
+                    </DropDownButton> */}
 
                 </div>
-            </div>
         </>
     );
 }
