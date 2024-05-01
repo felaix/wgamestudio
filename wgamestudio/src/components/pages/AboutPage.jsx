@@ -35,7 +35,7 @@ const AboutPage = () => {
                     </div>
 
                     {/* Username */}
-                    <h1 className="text-1xl font-bold p-2 text-gray-50">FGames</h1>
+                    <h1 className="text-1xl font-bold p-2 text-gray-50">Felix Eßbach</h1>
                     <p>Unity C# Programmer</p>
 
                     {/* About & Interests */}
