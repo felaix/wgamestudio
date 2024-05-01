@@ -15,7 +15,7 @@ const AboutPage = () => {
                 <div className="h-auto w-auto shadow-lg border-blue-500 flex flex-col bg-gray-800 items-center justify-center p-10 pb-5 text-gray-400 border-2 border-solid rounded-md">
 
                     <div className="w-36 h-36 rounded-full z-0 border-blue-500 border-2">
-                        <img className="rounded-full" src="/public/FGames_ProfilePicture_Blue.jpg"></img>
+                        <img className="rounded-full" src="/FGames_ProfilePicture_Blue.jpg"></img>
                     </div>
 
                     {/* Tags  */}
